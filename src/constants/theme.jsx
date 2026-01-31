@@ -1,8 +1,8 @@
 export const BG_IMAGES = [
-    "/src/assets/theme/image1.png",
-    "/src/assets/theme/image2.png",
-    "/src/assets/theme/image3.png",
-    "/src/assets/theme/image4.png",
-    "/src/assets/theme/image5.jpeg",
-    "/src/assets/theme/image6.jpeg",
+    "/public/theme/image1.png",
+    "/public/theme/image2.png",
+    "/public/theme/image3.png",
+    "/public/theme/image4.png",
+    "/public/theme/image5.jpeg",
+    "/public/theme/image6.jpeg",
 ]
