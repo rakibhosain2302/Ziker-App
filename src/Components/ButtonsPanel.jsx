@@ -1,9 +1,10 @@
 import React from "react";
-import { FcPlus } from "react-icons/fc";
+import { BsPatchPlusFill } from "react-icons/bs";
+
 
 const ButtonsPanel = ({ handleIncrement }) => {
   return (
-    <div className="mt-5 d-flex justify-content-center mb-5">
+    <div className="mt-4 d-flex justify-content-center mb-5">
       <div className="orbit-wrapper" onClick={handleIncrement} style={{ cursor: "pointer" }}>
         {/* rotating rings */}
         <span className="orbit orbit-1"></span>
@@ -14,7 +15,7 @@ const ButtonsPanel = ({ handleIncrement }) => {
         <button
           className="btn btn-success rounded-circle main-btn"
         >
-          <FcPlus size={90} />
+          <BsPatchPlusFill size={50} />
         </button>
       </div>
     </div>

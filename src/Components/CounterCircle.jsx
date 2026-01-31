@@ -1,6 +1,6 @@
 import React from "react";
 
-const CounterCircle = ({ count, progress, mode, size = 250 }) => {
+const CounterCircle = ({ count, progress, mode, size = 200 }) => {
   const STROKE = 12;
   const RADIUS = (size - STROKE) / 2;
   const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
@@ -19,7 +19,7 @@ const CounterCircle = ({ count, progress, mode, size = 250 }) => {
 
   return (
     <div
-      className="position-relative rounded-circle mx-auto my-4"
+      className="position-relative rounded-circle mx-auto"
       style={{ width: size, height: size, background: "rgba(0, 0, 0, 0.42)" }}
     >
       <svg width={size} height={size}>
@@ -50,7 +50,7 @@ const CounterCircle = ({ count, progress, mode, size = 250 }) => {
 
       <h1
         className="position-absolute top-50 start-50 translate-middle text-white"
-        style={{ pointerEvents: "none", fontWeight: "bold", fontSize: "3.5rem" }}
+        style={{ pointerEvents: "none", fontWeight: "bold", fontSize: "2.5rem" }}
       >
         {banglaText(count)}
       </h1>

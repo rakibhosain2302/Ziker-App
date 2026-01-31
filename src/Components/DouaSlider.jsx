@@ -23,12 +23,12 @@ const DouaSlider = ({
   };
 
   return (
-    <div className="my-3 text-center p-2">
+    <div className="my-2 text-center p-2">
       <h3 className="text-white">{currentDoua.arabic}</h3>
-      <h5 className="text-white mt-4">{currentDoua.bangla}</h5>
+      <h5 className="text-white mt-1">"{currentDoua.bangla}"</h5>
 
       {/* Arrow Buttons */}
-      <div className="d-flex justify-content-center justify-content-between mt-5">
+      <div className="d-flex justify-content-center justify-content-between">
         <button
           className="btn btn-outline-success text-white btn-sm"
           onClick={prevDoua}
@@ -37,11 +37,11 @@ const DouaSlider = ({
           <FaArrowLeft size={26} />
         </button>
         <div>
-          <small className="d-block mt-2 text-white">
+          <small className="d-block text-white">
             দু‘আ {toBanglaNumber(index + 1)}/{toBanglaNumber(total)}
           </small>
 
-          <small className="text-white mt-2 d-block">
+          <small className="text-white d-block">
             ধরন: {mode === "infinity" ? "অসীম" : toBanglaNumber(mode)} |
             অগ্রগতি: {toBanglaNumber(progress.toFixed(0))}%
           </small>

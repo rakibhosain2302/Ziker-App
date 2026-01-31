@@ -14,6 +14,7 @@ const TasbihCounter = () => {
   const [bgIndex, setBgIndex] = useState(0);
   const [douaIndex, setDouaIndex] = useState(0);
   const [progress, setProgress] = useState(0);
+  const size = 180;
 
   const RADIUS = 70;
   const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
@@ -72,16 +73,19 @@ const TasbihCounter = () => {
 
   const handleModeChange = (value) => {
     setMode(value);
+    setCount(0);
     setProgress(0);
   };
 
   const prevDoua = () => {
     setDouaIndex((prev) => (prev - 1 + DOUA_LIST.length) % DOUA_LIST.length);
+    setCount(0);
     setProgress(0);
   };
 
   const nextDoua = () => {
     setDouaIndex((prev) => (prev + 1) % DOUA_LIST.length);
+    setCount(0);
     setProgress(0);
   };
 
@@ -93,18 +97,15 @@ const TasbihCounter = () => {
   const progressColor = "#198754";
 
   return (
-    <div className="row">
-      <div className="tasbih-bg align-items-center min-vh-100">
-        <div
+    <div className="min-vh-100 d-flex justify-content-center align-items-center">
+      <div className="position-relative w-100">
+        <div className="bg-image"
           style={{
             backgroundImage: `url(${BG_IMAGES[bgIndex]})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             objectFit: "contain",
-            width: "100%",
-            height: "100%",
-            borderRadius: "20px",
             transition: "background 0.5s ease-in-out",
           }}
         >
@@ -112,7 +113,7 @@ const TasbihCounter = () => {
             className="shadow h-100 border-0 image-overlay"
           >
             <div className="card-body text-center">
-              <h2 className="fw-bold mb-3 text-white fs-1 p-4">
+              <h2 className="fw-bold mb-3 text-white fs-1 pt-4">
                 {currentDoua.title}
               </h2>
 
@@ -122,7 +123,7 @@ const TasbihCounter = () => {
                 progress={progress}
                 mode={mode}
                 color={progressColor}
-                size={220}
+                size={size}
               />
 
               {/* Doua Slider */}

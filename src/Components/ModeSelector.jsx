@@ -11,7 +11,7 @@ const ModeSelector = ({ mode, onChange, changeBg }) => {
   const options = [
     { value: 33, label: "৩৩" },
     { value: 99, label: "৯৯" },
-    { value: "infinity", label: <TiInfinityOutline size={28} /> }, // শুধু ∞ icon বড়
+    { value: "infinity", label: <TiInfinityOutline size={20} /> }, // শুধু ∞ icon বড়
   ];
 
   // Click outside to close dropdown
@@ -40,14 +40,14 @@ const ModeSelector = ({ mode, onChange, changeBg }) => {
     <div
       className="d-flex align-items-center justify-content-between my-3"
       ref={dropdownRef}
-      style={{ width: "140px", margin: "0 auto", gap: "10px" }}
+      style={{ width: "100px", margin: "0 auto", gap: "10px" }}
     >
       {/* Dropdown */}
-      <div className="position-relative" style={{ flex: 1 }}>
+      <div className="position-relative" style={{  }}>
         {/* Selected item */}
         <div
-          className="border rounded p-2 d-flex bg-white justify-content-between align-items-center"
-          style={{ cursor: "pointer" }}
+          className="border rounded p-1 d-flex bg-white justify-content-between align-items-center"
+          style={{ cursor: "pointer", width: "55px"}}
           onClick={() => setOpen(!open)}
         >
           <span className="text-success fs-5 btn-sm fw-bold">{selectedLabel}</span>
@@ -57,8 +57,8 @@ const ModeSelector = ({ mode, onChange, changeBg }) => {
         {/* Options */}
         {open && (
           <div
-            className="position-absolute w-100 border rounded mt-1 bg-white"
-            style={{ zIndex: 100 }}
+            className="position-absolute border rounded mt-1 bg-white"
+            style={{ zIndex: 100, width: "55px" }}
           >
             {options.map((opt) => (
               <div
@@ -76,7 +76,7 @@ const ModeSelector = ({ mode, onChange, changeBg }) => {
 
       {/* Change BG Button */}
       <span
-        className="border p-2 rounded bg-white btn-sm text-success"
+        className="border p-1 rounded bg-white btn-sm text-success"
         onClick={changeBg}
         style={{ whiteSpace: "nowrap", cursor: "pointer"}}
       >
