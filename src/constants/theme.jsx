@@ -1,8 +1,8 @@
 export const BG_IMAGES = [
-    "/public/theme/image1.png",
-    "/public/theme/image2.png",
-    "/public/theme/image3.png",
-    "/public/theme/image4.png",
-    "/public/theme/image5.jpeg",
-    "/public/theme/image6.jpeg",
-]
+  "/theme/image1.png",
+  "/theme/image2.png",
+  "/theme/image3.png",
+  "/theme/image4.png",
+  "/theme/image5.jpeg",
+  "/theme/image6.jpeg",
+];

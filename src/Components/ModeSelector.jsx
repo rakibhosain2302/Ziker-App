@@ -78,7 +78,7 @@ const ModeSelector = ({ mode, onChange, changeBg }) => {
       <span
         className="border p-2 rounded bg-white btn-sm text-success"
         onClick={changeBg}
-        style={{ whiteSpace: "nowrap" }}
+        style={{ whiteSpace: "nowrap", cursor: "pointer"}}
       >
         <SiImagedotsc size={30} />
       </span>
