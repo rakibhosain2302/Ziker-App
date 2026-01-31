@@ -4,8 +4,8 @@ import { BsPatchPlusFill } from "react-icons/bs";
 
 const ButtonsPanel = ({ handleIncrement }) => {
   return (
-    <div className="mt-4 d-flex justify-content-center mb-5">
-      <div className="orbit-wrapper" onClick={handleIncrement} style={{ cursor: "pointer" }}>
+    <div className="mt-4 d-flex justify-content-center">
+      <div className="orbit-wrapper" onClick={handleIncrement} style={{ cursor: "pointer", marginBottom: "40px"}}>
         {/* rotating rings */}
         <span className="orbit orbit-1"></span>
         <span className="orbit orbit-2"></span>
