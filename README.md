@@ -1,5 +1,7 @@
 🌙 Ziker-App
 
+URL:https://ziker-app.netlify.app/
+
 Ziker-App is a modern Islamic Tasbih & Zikr Counter application built with React.
 It helps users perform daily zikr, track progress, rotate duas, and maintain consistency with a clean and calming UI.
 
