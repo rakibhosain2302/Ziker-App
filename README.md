@@ -91,7 +91,7 @@ This project is open-source and available under the MIT License.
 
 👤 Author
 
-Rakib Hossain
+Rakib Hossain | 
 Web Developer | React & Laravel Enthusiast
 
 ✨ May this app be a source of benefit (Sadaqah Jariyah). 🤍
